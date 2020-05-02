@@ -15,7 +15,9 @@ function findAvgSubArr(arr, k) {
   return res;
 }
 
-// console.log(findAvgSubArr(arr, k));
+console.log(findAvgSubArr(arr, k));
+
+// Time complexity: Since for every element of the input array, we are calculating the sum of its next ‘K’ elements, the time complexity of the above algorithm will be O(N*K)O(N∗K) where ‘N’ is the number of elements in the input array.
 
 // Sliding Window approach
 function findAvgSubArrSlidingWindow(arr, k) {
@@ -34,3 +36,5 @@ function findAvgSubArrSlidingWindow(arr, k) {
 }
 
 console.log(findAvgSubArrSlidingWindow(arr, k));
+
+// Time Complexity : O(N).
