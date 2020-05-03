@@ -1,6 +1,6 @@
 // Given an array of characters where each character represents a fruit tree, you are given two baskets and your goal is to put maximum number of fruits in each basket. The only restriction is that each basket can have only one type of fruit.
 
-let arr = ["A", "B", "C", "A", "C"];
+let arr = ["A", "B", "C", "B", "B", "C"];
 let k = 2;
 function fruitsInBasket(arr, k) {
   let start = 0;
@@ -21,8 +21,12 @@ function fruitsInBasket(arr, k) {
       }
       start += 1;
     }
+    console.log(fruitObj, "obj");
     maxLen = Math.max(maxLen, i - start + 1);
   }
   return maxLen;
 }
 console.log(fruitsInBasket(arr, k));
+
+// Time complexity : O(N)
+// Space Complexity : O(1)
