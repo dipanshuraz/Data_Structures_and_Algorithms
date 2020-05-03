@@ -1,6 +1,6 @@
 // Given a string, find the length of the longest substring in it with no more than K distinct characters.
-let str = "araaci";
-let k = 2;
+let str = "cbbebi";
+let k = 3;
 
 function longestSubstrwithKdistinct(str, k) {
   let start = 0;
@@ -13,6 +13,7 @@ function longestSubstrwithKdistinct(str, k) {
       obj[rightChar] = 0;
     }
     obj[rightChar] += 1;
+    console.log(obj, "obj");
     // Shrink the sliding window until we left with the 'k' distinct chars in 'obj'
     while (Object.keys(obj).length > k) {
       const leftChar = str[start];
