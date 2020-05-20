@@ -21,4 +21,5 @@ var merge = function (intervals) {
   return intervals;
 };
 
-// O(nLogN)
+// Time Complexity : O(nLogN)
+// Space Complexity : O(N)
